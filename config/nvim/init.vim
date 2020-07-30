@@ -466,8 +466,10 @@ let python_highlight_all = 1
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
-"" MyCustom
+"" Quickly quit vim
 noremap qq :qa!<Enter>
+
+"" Fzf search
 
 "" Lightline
 set tabline=%!lightline#tabline()
@@ -489,7 +491,7 @@ set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.pyc,__pycache__
 let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
 
-""" Floatterm 
+"" Floatterm 
 let g:floaterm_keymap_new    = '<F7>'
 let g:floaterm_keymap_prev   = '<F8>'
 let g:floaterm_keymap_next   = '<F9>'
