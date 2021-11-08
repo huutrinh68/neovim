@@ -2,9 +2,15 @@
 
 ### Install neovim
 ```console
+sudo apt-get install software-properties-common
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim
+```
+
+### Edit .bashrc
+```console
+echo "export XTERM=xterm-256color" >> ~/.bashrc
 ```
 
 ### Prepare config file
